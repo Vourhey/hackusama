@@ -36,7 +36,9 @@ To store the hash in the Robonomcis parachain:
 echo "{ 'action': 'Rent apartments (soon)', 'camp': 'Airalab village', 'perimeter': 70.83 }" | ./robonomics io write ipfs | ./robonomics io write datalog -s SURI --remote REMOTE
 ```
 
-where `SURI` is a private key, `REMOTE` is a remote endpoint (or localhost if not provided)
+where `SURI` is a private key, `REMOTE` is a remote endpoint (or localhost if not provided). 
 
 Public RPC node: wss://rpc.parachain.robonomics.network/ 
 Robonomics Node: https://parachain.robonomics.network/
+
+Kusama will handle data sharing to Mars and back 
