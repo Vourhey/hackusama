@@ -8,13 +8,7 @@ The Kusama architecture allows a dedicated blockchain to live on Mars on its own
 
 Kusama will allow finalization of data from Mars on Earth and communication with Mars through transactions from other parachains using XCMP.
 
-## Martian Dapp
-
-To fulfill the article on maintaining balance in the environment, the ecologist saves landscape images of the habitat of the Mars-1 base camp with a demonstration of crops for growing and their impact on the environment.
-
-The Dapp shows results that were achieved during the Mars expedition.
-
-https://mars.robonomics.network/#/
+The blockchain for data storage was created in accordance with the UN Agreement Governing the Activities of States on the Moon and Other Celestial Bodies from 1979.
 
 ## How To Transfer Data Using Satellites
 
@@ -43,3 +37,15 @@ Public RPC node: wss://rpc.parachain.robonomics.network/
 Robonomics Node: https://parachain.robonomics.network/
 
 Kusama will handle data sharing to Mars and back 
+
+## Freedom of Scientific Investigation
+
+Research missions must publish the results of their work in the public domain. 
+
+The data is stored in clear text in the hash-oriented IPFS storage, and the hashes themselves are regularly stored on the Kusama network
+
+The Dapp shows results that were achieved during the Mars expedition.
+
+https://mars.robonomics.network/#/
+
+
