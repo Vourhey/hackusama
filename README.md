@@ -39,6 +39,7 @@ echo "{ 'action': 'Rent apartments (soon)', 'camp': 'Airalab village', 'perimete
 where `SURI` is a private key, `REMOTE` is a remote endpoint (or localhost if not provided). 
 
 Public RPC node: wss://rpc.parachain.robonomics.network/ 
+
 Robonomics Node: https://parachain.robonomics.network/
 
 Kusama will handle data sharing to Mars and back 
