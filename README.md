@@ -10,7 +10,7 @@ Kusama will allow finalization of data from Mars on Earth and communication with
 
 The blockchain for data storage was created in accordance with the UN Agreement Governing the Activities of States on the Moon and Other Celestial Bodies from 1979.
 
-## How To Transfer Data Using Satellites
+## How To Transfer Data Between Mars and Earth
 
 Taking as a basis the principles of allocating territories to private farms in the development of the western United States, we want to give the opportunity to acquire station space on Mars for the inhabitants of the Earth through inter-blockchain communication within the Kusama network.
 
@@ -19,7 +19,7 @@ Taking into account the result of robot's job must be submitted to the blockchai
 To publish a string of data to IPFS:
 
 ```
-echo "{ 'action': 'Rent apartments (soon)', 'camp': 'Airalab village', 'perimeter': 70.83 }" | ./robonomics io write ipfs
+echo "Hello World" | ./robonomics io write ipfs
 ```
 
 Note! IPFS daemon must be running
@@ -27,7 +27,7 @@ Note! IPFS daemon must be running
 To store the hash in the Robonomcis parachain:
 
 ```
-echo "{ 'action': 'Rent apartments (soon)', 'camp': 'Airalab village', 'perimeter': 70.83 }" | ./robonomics io write ipfs | ./robonomics io write datalog -s SURI --remote REMOTE
+echo "Hello World" | ./robonomics io write ipfs | ./robonomics io write datalog -s SURI --remote REMOTE
 ```
 
 where `SURI` is a private key, `REMOTE` is a remote endpoint (or localhost if not provided). 
@@ -36,7 +36,26 @@ Public RPC node: wss://rpc.parachain.robonomics.network/
 
 Robonomics Node: https://parachain.robonomics.network/
 
-Kusama will handle data sharing to Mars and back 
+Kusama will handle data sharing to Mars and back
+
+Dr. Helmet-Head used [robonomics io](https://github.com/airalab/robonomics/tree/master/robonomics/io) to publish photos:
+
+```
+DrHelmetHead@robonomics-parachain:~$ echo "QmYTwNBvP5bWD7a6VoSnukKvUtB58HUmmU9GxHrdTU5koz" | ./robonomics io write datalog -s 0xf7d0...6642
+```
+
+Base Camp Mars-1 used the tool to publish sensor data:
+
+```
+Base-Camp-Mars-1@robonomics-parachain:~$ echo "QmYhSXxsz96ARkguJDiX8DceaPv1vgkyCoG48LM88PTEX2" | ./robonomics io write datalog -s  0xd11f89dc79967b9b8d9d1646d26e1a24dab5d92f072f8d3bc1c26782ead30a9f
+```
+
+Rover Mars-2 used `robonomics io` to store a mission:
+
+```
+Rover-Mars-2@robonomics-parachain:~$ echo "QmPGFiq2wNTf2Sskq6deEa6qmkWsWRjBt2uDDupVmgb4YU" | ./robonomics io write datalog -s  0x77b1...3e83
+2f710bab2ed5c7455d349fc2e8b1e18cb9160bb20754c685705c8db9b32a379c
+```
 
 ## Freedom of Scientific Investigation
 
