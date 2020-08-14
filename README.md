@@ -47,7 +47,7 @@ DrHelmetHead@robonomics-parachain:~$ echo "QmYTwNBvP5bWD7a6VoSnukKvUtB58HUmmU9Gx
 Base Camp Mars-1 used the tool to publish sensor data:
 
 ```
-Base-Camp-Mars-1@robonomics-parachain:~$ echo "QmYhSXxsz96ARkguJDiX8DceaPv1vgkyCoG48LM88PTEX2" | ./robonomics io write datalog -s  0xd11f89dc79967b9b8d9d1646d26e1a24dab5d92f072f8d3bc1c26782ead30a9f
+Base-Camp-Mars-1@robonomics-parachain:~$ echo "QmYhSXxsz96ARkguJDiX8DceaPv1vgkyCoG48LM88PTEX2" | ./robonomics io write datalog -s  0xd11f...0a9f
 ```
 
 Rover Mars-2 used `robonomics io` to store a mission:
