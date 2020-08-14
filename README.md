@@ -12,11 +12,9 @@ The blockchain for data storage was created in accordance with the UN Agreement 
 
 ## How To Transfer Data Between Mars and Earth
 
-Taking as a basis the principles of allocating territories to private farms in the development of the western United States, we want to give the opportunity to acquire station space on Mars for the inhabitants of the Earth through inter-blockchain communication within the Kusama network.
-
 Taking into account the result of robot's job must be submitted to the blockchain and finalized between 2 planets, the robot has to save metadate.
 
-To publish a string of data to IPFS:
+To publish a string of data to IPFS with [Robonomics io](https://github.com/airalab/robonomics#6-robonomics-io):
 
 ```
 echo "Hello World" | ./robonomics io write ipfs
@@ -38,7 +36,7 @@ Robonomics Node: https://parachain.robonomics.network/
 
 Kusama will handle data sharing to Mars and back
 
-Dr. Helmet-Head used [robonomics io](https://github.com/airalab/robonomics/tree/master/robonomics/io) to publish photos:
+Dr. Helmet-Head used [robonomics io](https://github.com/airalab/robonomics#6-robonomics-io) to publish photos:
 
 ```
 DrHelmetHead@robonomics-parachain:~$ echo "QmYTwNBvP5bWD7a6VoSnukKvUtB58HUmmU9GxHrdTU5koz" | ./robonomics io write datalog -s 0xf7d0...6642
@@ -56,12 +54,6 @@ Rover Mars-2 used `robonomics io` to store a mission:
 Rover-Mars-2@robonomics-parachain:~$ echo "QmPGFiq2wNTf2Sskq6deEa6qmkWsWRjBt2uDDupVmgb4YU" | ./robonomics io write datalog -s  0x77b1...3e83
 2f710bab2ed5c7455d349fc2e8b1e18cb9160bb20754c685705c8db9b32a379c
 ```
-
-## Freedom of Scientific Investigation
-
-Research missions must publish the results of their work in the public domain. 
-
-The data is stored in clear text in the hash-oriented IPFS storage, and the hashes themselves are regularly stored on the Kusama network
 
 The Dapp shows results that were achieved during the Mars expedition.
 
